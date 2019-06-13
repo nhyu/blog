@@ -1,4 +1,4 @@
-# nhyu blog
+# Blog
 
 ## JavaScript 系列
 
