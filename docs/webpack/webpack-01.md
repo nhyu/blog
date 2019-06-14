@@ -2,6 +2,7 @@
 > 因为第三方插件变化较少，单独打包可以直接走浏览器缓存，提高加载速度。
 
 ## 1.第三方库单独的入口
+
 ```js
 module.exports = {
     entry:{
@@ -13,6 +14,7 @@ module.exports = {
 
 ## 2.可以全局引入公共库（可选）
 > 全局引入公共库后代码中不需要再单独引入，可以直接使用`$`  
+
 ```js
 const webpack = require('webpack');
 module.exports = {
@@ -25,8 +27,9 @@ module.exports = {
 }
 ```
 
-## 打包抽离公共库配置（Webpack 3）
+## 3.打包抽离公共库配置（Webpack 3）
 > Webpack 3中已经移除了 `webpack.optimize.CommonsChunkPlugin` 插件，Webpack 4直接移步下一项  
+
 ```js
 const webpack = require('webpack');
 module.exports = {
@@ -44,7 +47,8 @@ module.exports = {
 }
 ```
 
-## 打包抽离公共库配置（Webpack 4）
+## 4.打包抽离公共库配置（Webpack 4）
+
 ```js
 module.exports = {
     optimization: {
